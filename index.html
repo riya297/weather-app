@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="full-width">
+        <div class="main-container">
+            <div class="weather-side flex">
+                <div class="date-container">
+                    <h2 class="date-dayname">Tuesday</h2>
+                    <span class="date-day"> 29 March 2025</span>
+                    <br>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="location">Shahjahanpur, India</span>
+                </div>
+
+                <div class="weather-container">
+                    <i class="fa-solid fa-sun icon"></i>
+                    <h1 class="weather-temp">29°C</h1>
+                    <h3 class="weather-desc">Sunny</h3>
+                </div>
+            </div>
+            
+            <!-- Info Side/Right Section -->
+
+            <div class="info-side">
+                <div class="search-container">
+                    <input type="search" placeholder="Search For Places" class="search-box">
+                    <button>Search</button>
+                </div>
+
+                <div class="today-info-container">
+                    <div class="today-info">
+                        <div class="precipitation flex">
+                            <span class="title">PRECIPITATION</span>
+                            <span class="value">0%</span>
+                        </div>
+
+                        <div class="humidity flex">
+                            <span class="title">HUMIDITY</span>
+                            <span class="value">34%</span>
+                        </div>
+
+                        <div class="wind flex">
+                            <span class="title">WIND</span>
+                            <span class="value">0 km/h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-container">
+                        <ul class="week-list flex">
+                            <li class="active">
+                                <i class="fa-solid fa-cloud day-icon"></i>
+                                <span class="day-name">Tue</span>
+                                <span class="day-temp">29°C</span>
+                            </li>
+                            
+                            <li>
+                                <i class="fa-solid fa-cloud day-icon"></i>
+                                <span class="day-name">Wed</span>
+                                <span class="day-temp">25°C</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-cloud day-icon"></i>
+                                <span class="day-name">Thu</span>
+                                <span class="day-temp">27°C</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-cloud day-icon"></i>
+                                <span class="day-name">Fri</span>
+                                <span class="day-temp">31°C</span>
+                            </li>
+
+                        </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+ /* Classes */
+.full-width{
+    width: 100%;
+    height: 100vh;
+    background-color: #343d4b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main Container */
+.main-container{
+    border-radius: 55px;
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    background-color: #222831;
+    color: #ffffff;
+    height: 400px;
+    display: flex;
+}
+
+/* Weather Side Box */
+.weather-side{
+    width: 100%;
+    height: 100%;
+    border-radius: 55px;
+    background-image: linear-gradient(135deg, #fcbec2d5 10%, #1e73dcd5 100%), url("https://img.freepik.com/premium-vector/day-with-clouds-weather-app-screen-mobile-interface-design-forecast-weather-background-time-concept-vector-banner_87946-4137.jpg?w=900");
+    width: 300px;
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+    transition: transform 300ms ease;
+    transform: translate(0) scale(1.02) perspective(1000px);
+    flex-direction: column;
+    padding: 20px 0px 20px 30px;
+}
+
+.weather-side:hover{
+    transform: scale(1.1) perspective(1500px) rotateY(10deg);
+}
+
+.weather-container .icon{
+    font-size: 50px;
+}
+
+.weather-container .weather-temp{
+    margin: 0;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+/* Info Side */
+.info-side{
+    padding: 25px;
+}
+
+.info-side .today-info{
+    padding: 15px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.today-info .title{
+    margin-top: 8px;
+}
+
+.search-container input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+.search-container button{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 10px;
+    background-image: linear-gradient(135deg, #f2848cd5 10%, #1e73dcd5 100%);
+}
+.search-container button:hover{
+    background-image: linear-gradient(135deg, #e95b64d5 10%, #0765d8d5 100%);
+}
+
+/* Weekly Forecast */
+.week-list {
+    list-style-type: none;
+    padding: 5px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Individual Day Box */
+.week-list li {
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    /* width: 100px; */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.week-list li:hover {
+    color: black;
+    transform: scale(1.05);
+    background-image: linear-gradient(135deg, #f2848cd5 10%, #1e73dcd5 100%)
+
+}
+
+/* Active Day */
+.week-list li.active {
+    background-image: linear-gradient(135deg, #f2848cd5 10%, #1e73dcd5 100%);
+    /* background: rgba(255, 255, 255, 0.35); */
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Day Icon */
+.week-list li .day-icon {
+    font-size: 28px;
+    color: white;
+}
+
+
+/* Day Name */
+.week-list li .day-name {
+    display: block;
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+/* Temperature */
+.week-list li .day-temp {
+    font-weight: 700;
+    font-size: 1rem;
+}
